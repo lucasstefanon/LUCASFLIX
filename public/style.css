@@ -1,0 +1,225 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(24, 24, 24);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    background-color: auto;
+}
+
+::-webkit-scrollbar {
+    border-radius: 7px;
+    width: 10px;
+    background-color: rgb(20, 20, 20);
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+        width: 10px;
+    background-color: rgb(172, 2, 2);
+}
+
+/* CABEÇALHO / MENU */
+
+.menu {
+    background-color: black;
+    background: linear-gradient(to right, #0f0f0f 0%, #000000 50%, #0f0f0f 90%);
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    gap: 30px;
+}
+
+.vmenu {
+    padding: 1px;
+    background-color: red;
+}
+
+#menuativo {
+    color: rgb(172, 2, 2);
+    transition: 0.3s;
+}
+
+.logo {
+    align-items: center;
+    padding: 0px;
+    width: 170px;
+    height: 40px;
+}
+
+.logo:hover {
+    opacity: 80%;
+    transition: 0.3s;
+}
+
+#bcadastro {
+    position: absolute;
+    left: 95%;
+    gap: 10px;
+}
+
+#blogin {
+    position: absolute;
+    left: 90%;
+    gap: 10px;
+}
+
+
+
+.imenu {
+    color: white;
+}
+
+.imenu:hover {
+    color: rgb(145, 145, 145);
+    transition: 0.3s;
+}
+
+button {
+    background-color: #222222;
+    color: White;
+    border-color: red;
+    border-radius: 10px;
+    width: 70px;
+    height: 25px;
+}
+
+button:hover {
+    color: rgb(145, 145, 145);
+    transition: 0.3s;
+}
+
+.pesquisa {
+    background-color: #222222;
+    color: white;
+    border-radius: 10px;
+    border: solid red 1px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 25px;
+}
+
+.pesquisa:hover {
+    background-color: rgb(24, 24, 24);
+    transition: 0.3s;
+}
+
+.pesquisa::placeholder {
+    color: rgb(235, 235, 235);
+}
+
+
+/* MAIN PRODUCTS */
+
+
+main .container {
+    display: flex;
+    justify-content: center;
+}
+
+.cursos-grid {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 60px;
+    row-gap: 60px;  
+    justify-content: center;
+}
+
+.curso-item {
+    position: relative;
+    display: block;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.curso-item:hover {
+    opacity: 0.8;
+}
+
+.curso-item .photo {
+    text-align: center;
+    background-color: rgb(34, 34, 34);
+    padding: 10px 50px;
+    height: 100px;
+    width: 100px;
+    border-radius: 7px;
+}
+
+.curso-item .photo img {
+    max-width: 100%;
+}
+
+.curso-item .warning {
+    position: absolute;
+    top: -20px;
+    left: -40px;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+
+.curso-item .info {
+    background-color: rgb(17, 17, 17);
+    margin-top: -30px;
+    padding: 60px 30px 30px 30px;
+    border-radius: 7px;
+}
+
+.curso-item .product-category {
+    margin-top: 0px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500px;
+}
+
+.curso-item .product-name {
+    color: red;
+    font-family: Verdana;
+    margin-top: 20px;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    background-color: #000000;
+        background: linear-gradient(to right, #080808 0%, #000000 50%, #080808 90%);
+    color: white;
+}
+
+footer .container {
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .copyrights {
+    font-size: 18px;
+}
+
+footer .copyrights a {
+    color: red;
+}
+
+footer .copyrights a:hover {
+    color: rgb(172, 2, 2);
+    transition: 0.3s;
+    text-decoration: underline;
+}
