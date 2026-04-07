@@ -12,86 +12,194 @@
 <body>
     <header>
         <div class="menu">
+            <div class="menu-esq">
+                <a href="index.html"><img src="img/logo.png" class="logo"></a>
+                <a href="#initial" class="imenu">Inicio</a>
+                <a href="#cursos" class="imenu">Cursos</a>
+                <a href="#avaliacoes" class="imenu">Feedback</a>
+            </div>
 
-            <a href="index.html"><img src="img/logo.png" alt="logo projeto" class="logo"></a>
-            <a href="index.html" class="imenu" id="menuativo"><em>Inicio</em></a>
-            <a href="pag/cursos.html" class="imenu"><em>Cursos</em></a>
-            <a href="pag/sobre.html" class="imenu"><em>Sobre-nos</em></a>
+            <input type="search" class="pesquisa" placeholder="Barra de pesquisa">
 
-
-            <input type="search" class="pesquisa" placeholder="   Barra de pesquisa">
-
-
-            <button id="blogin">Login</button>
-            <button id="bcadastro">Cadastro</button>
-
+            <div class="menu-dir">
+                <button id="blogin">Login</button>
+                <button id="bcadastro">Cadastro</button>
+            </div>
         </div>
-        <div class="vmenu">
-        </div>
-
     </header>
 
     <main>
-        <div class="container">
-            <div class="cursos-grid">
-                <a href="" class="curso-item">
-                    <div class="warning">Promoção</div>
-                    <div class="photo">
-                        <img src="img/html.png" alt="fotohtml" class="htmlimg">
-                    </div>
-                    <div class="info">
-                        <div class="product-category">LUCASFLIX</div>
-                        <div class="product-name">HTML5</div>
-                    </div>
-                </a>
-                <a href="" class="curso-item">
-                    <div class="photo">
-                        <img src="img/html.png" alt="fotohtml" class="htmlimg">
-                    </div>
-                    <div class="info">
-                        <div class="product-category">LUCASFLIX</div>
-                        <div class="product-name">HTML5</div>
-                    </div>
-                </a>
-                <a href="" class="curso-item">
-                    <div class="photo">
-                        <img src="img/html.png" alt="fotohtml" class="htmlimg">
-                    </div>
-                    <div class="info">
-                        <div class="product-category">LUCASFLIX</div>
-                        <div class="product-name">HTML5</div>
-                    </div>
-                </a>
-                <a href="" class="curso-item">
-                    <div class="warning">Promoção</div>
-                    <div class="photo">
-                        <img src="img/css.png" alt="fotohtml" class="cssimg">
-                    </div>
-                    <div class="info">
-                        <div class="product-category">LUCASFLIX</div>
-                        <div class="product-name">HTML5</div>
-                    </div>
-                </a>
-                <a href="" class="curso-item">
-                    <div class="photo">
-                        <img src="img/css.png" alt="fotohtml" class="cssimg">
-                    </div>
-                    <div class="info">
-                        <div class="product-category">LUCASFLIX</div>
-                        <div class="product-name">HTML5</div>
-                    </div>
-                </a>
-                <a href="" class="curso-item">
-                    <div class="photo">
-                        <img src="img/css.png" alt="fotohtml" class="cssimg">
-                    </div>
-                    <div class="info">
-                        <div class="product-category">LUCASFLIX</div>
-                        <div class="product-name">HTML5</div>
-                    </div>
-                </a>
+        <section class="initial" id="initial">
+            <div class="firstsection">
+                <div class="titulo1">
+                    <h1>APRENDA PROGRAMAÇÃO DO <span class="destaque">ZERO</span> AO <span
+                            class="destaque">AVANÇADO</span></h1>
+                    <p>Cursos práticos de HTML, CSS e muito mais.</p>
+                    <a href="#cursos" class="btncursosinitial">Ver cursos</a>
+                    <a href="#avaliacoes" class="btnfeedback">Ver avaliações</a>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <section class="porque">
+            <h2>Por que escolher a LucasFlix?</h2>
+
+            <div class="porque-grid">
+                <div class="porque-card">
+                    <h3>🎯 Conteúdo direto ao ponto</h3>
+                    <p>Aulas objetivas, sem enrolação, focadas no que realmente importa para aprender programação.</p>
+                </div>
+
+                <div class="porque-card">
+                    <h3>📚 Cursos organizados</h3>
+                    <p>Trilhas de aprendizado estruturadas do básico ao avançado para você evoluir rapidamente.</p>
+                </div>
+
+                <div class="porque-card">
+                    <h3>🚀 Aprenda na prática</h3>
+                    <p>Projetos reais e exercícios práticos para fixar o conteúdo de forma eficiente.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="numeros">
+            <div class="numeros-grid">
+                <div class="numero-item">
+                    <h2 class="contador">+2.500</h2>
+                    <p>Alunos</p>
+                </div>
+
+                <div class="numero-item">
+                    <h2 class="contador" data-alvo="8">6</h2>
+                    <p>Cursos</p>
+                </div>
+
+                <div class="numero-item">
+                    <h2 class="contador">580</h2>
+                    <p>Online</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="avaliacoes" id="avaliacoes">
+            <h2>O que nossos alunos dizem</h2>
+
+            <div class="avaliacoes-grid">
+                <div class="avaliacao-card">
+                    <p class="texto">
+                        “Nunca tinha programado antes. Em poucos dias já consegui criar meu primeiro site!”
+                    </p>
+                    <div class="aluno">
+                        <img src="img/user1.jpg" alt="Aluno">
+                        <span>João Silva</span>
+                    </div>
+                </div>
+
+                <div class="avaliacao-card">
+                    <p class="texto">
+                        “Didática excelente e conteúdo direto ao ponto. Recomendo muito a LucasFlix.”
+                    </p>
+                    <div class="aluno">
+                        <img src="img/user2.jpg" alt="Aluno">
+                        <span>Ana Souza</span>
+                    </div>
+                </div>
+
+                <div class="avaliacao-card">
+                    <p class="texto">
+                        “Consegui meu primeiro freelance depois de fazer o curso de HTML e CSS!”
+                    </p>
+                    <div class="aluno">
+                        <img src="img/user3.jpg" alt="Aluno">
+                        <span>Pedro Lima</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <h2>Perguntas Frequentes</h2>
+
+            <details class="faq-item">
+                <summary>Preciso saber programar?</summary>
+                <p>Não. Os cursos começam do absoluto zero.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>Os cursos têm certificado?</summary>
+                <p>Sim! Todos os cursos possuem certificado de conclusão.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>Posso acessar pelo celular?</summary>
+                <p>Sim. A plataforma é totalmente responsiva.</p>
+            </details>
+        </section>
+
+        <section id="cursos" class="titulo-cursos">
+            <h2>Nossos Cursos</h2>
+            <p>Escolha por onde começar sua jornada na programação</p>
+            <div class="container">
+                <div class="cursos-grid">
+                    <a href="#cursos" class="curso-item">
+                        <div class="warning">Promoção</div>
+                        <div class="photo">
+                            <img src="img/html.png" alt="fotohtml" class="htmlimg">
+                        </div>
+                        <div class="info">
+                            <div class="product-category">LUCASFLIX</div>
+                            <div class="product-name">HTML5</div>
+                        </div>
+                    </a>
+                    <a href="#cursos" class="curso-item">
+                        <div class="photo">
+                            <img src="img/html.png" alt="fotohtml" class="htmlimg">
+                        </div>
+                        <div class="info">
+                            <div class="product-category">LUCASFLIX</div>
+                            <div class="product-name">HTML5</div>
+                        </div>
+                    </a>
+                    <a href="#cursos" class="curso-item">
+                        <div class="photo">
+                            <img src="img/html.png" alt="fotohtml" class="htmlimg">
+                        </div>
+                        <div class="info">
+                            <div class="product-category">LUCASFLIX</div>
+                            <div class="product-name">HTML5</div>
+                        </div>
+                    </a>
+                    <a href="" class="curso-item">
+                        <div class="warning">Promoção</div>
+                        <div class="photo">
+                            <img src="img/css.png" alt="fotohtml" class="cssimg">
+                        </div>
+                        <div class="info">
+                            <div class="product-category">LUCASFLIX</div>
+                            <div class="product-name">HTML5</div>
+                        </div>
+                    </a>
+                    <a href="#cursos" class="curso-item">
+                        <div class="photo">
+                            <img src="img/css.png" alt="fotohtml" class="cssimg">
+                        </div>
+                        <div class="info">
+                            <div class="product-category">LUCASFLIX</div>
+                            <div class="product-name">HTML5</div>
+                        </div>
+                    </a>
+                    <a href="#cursos" class="curso-item">
+                        <div class="photo">
+                            <img src="img/css.png" alt="fotohtml" class="cssimg">
+                        </div>
+                        <div class="info">
+                            <div class="product-category">LUCASFLIX</div>
+                            <div class="product-name">HTML5</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 
 
