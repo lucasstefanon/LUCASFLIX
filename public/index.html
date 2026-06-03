@@ -4,237 +4,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="imagex/png" href="icon/icone.ico">
     <title>LucasFlix</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="icon/icone.ico">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
+
     <header>
-        <div class="menu">
+        <nav class="menu">
+
             <div class="menu-esq">
-                <a href="index.html"><img src="img/logo.png" class="logo"></a>
-                <a href="#initial" class="imenu">Inicio</a>
-                <a href="#cursos" class="imenu">Cursos</a>
-                <a href="#avaliacoes" class="imenu">Feedback</a>
+                <a href="index.html">
+                    <img src="img/logo.png" alt="LucasFlix" class="logo">
+                </a>
+                <a href="#destaques" class="link-menu">Início</a>
+                <a href="#filmes" class="link-menu">Filmes</a>
+                <a href="#sobre" class="link-menu">Sobre</a>
             </div>
 
-            <input type="search" class="pesquisa" placeholder="Barra de pesquisa">
+            <input type="search" id="campo-busca" class="pesquisa-menu" placeholder="🔍 Pesquisar filmes...">
 
             <div class="menu-dir">
-                <button id="blogin">Login</button>
-                <button id="bcadastro">Cadastro</button>
+                <button class="btn-cabecalho">Login</button>
+                <button class="btn-cabecalho">Cadastro</button>
             </div>
-        </div>
+
+        </nav>
     </header>
 
+
     <main>
-        <section class="initial" id="initial">
-            <div class="firstsection">
-                <div class="titulo1">
-                    <h1>APRENDA PROGRAMAÇÃO DO <span class="destaque">ZERO</span> AO <span
-                            class="destaque">AVANÇADO</span></h1>
-                    <p>Cursos práticos de HTML, CSS e muito mais.</p>
-                    <a href="#cursos" class="btncursosinitial">Ver cursos</a>
-                    <a href="#avaliacoes" class="btnfeedback">Ver avaliações</a>
+
+        <section id="destaques">
+            <div class="container-secao">
+                <h2 class="titulo-secao">Em Destaque</h2>
+
+                <div id="area-slider">
                 </div>
+
             </div>
         </section>
 
-        <section class="porque">
-            <h2>Por que escolher a LucasFlix?</h2>
 
-            <div class="porque-grid">
-                <div class="porque-card">
-                    <h3>🎯 Conteúdo direto ao ponto</h3>
-                    <p>Aulas objetivas, sem enrolação, focadas no que realmente importa para aprender programação.</p>
+        <section id="filmes">
+            <div class="container-secao">
+                <h2 class="titulo-secao">Todos os Filmes</h2>
+
+                <div class="busca-container">
+                    <input type="text" id="campo-busca-filmes" placeholder="🔍 Pesquisar por título...">
                 </div>
 
-                <div class="porque-card">
-                    <h3>📚 Cursos organizados</h3>
-                    <p>Trilhas de aprendizado estruturadas do básico ao avançado para você evoluir rapidamente.</p>
+                <div id="area-filmes">
                 </div>
 
-                <div class="porque-card">
-                    <h3>🚀 Aprenda na prática</h3>
-                    <p>Projetos reais e exercícios práticos para fixar o conteúdo de forma eficiente.</p>
-                </div>
             </div>
         </section>
 
-        <section class="numeros">
-            <div class="numeros-grid">
-                <div class="numero-item">
-                    <h2 class="contador">+2.500</h2>
-                    <p>Alunos</p>
-                </div>
 
-                <div class="numero-item">
-                    <h2 class="contador" data-alvo="8">6</h2>
-                    <p>Cursos</p>
-                </div>
+        <section id="sobre">
+            <div class="container-secao">
+                <h2 class="titulo-secao">Informações do(a) Aluno(a)</h2>
 
-                <div class="numero-item">
-                    <h2 class="contador">580</h2>
-                    <p>Online</p>
-                </div>
-            </div>
-        </section>
+                <div class="sobre-grid">
 
-        <section class="avaliacoes" id="avaliacoes">
-            <h2>O que nossos alunos dizem</h2>
-
-            <div class="avaliacoes-grid">
-                <div class="avaliacao-card">
-                    <p class="texto">
-                        “Nunca tinha programado antes. Em poucos dias já consegui criar meu primeiro site!”
-                    </p>
-                    <div class="aluno">
-                        <img src="img/user1.jpg" alt="Aluno">
-                        <span>João Silva</span>
+                    <div class="sobre-card">
+                        <h3>Sobre</h3>
+                        <p>
+                            O <strong>LucasFlix</strong> é uma plataforma de filmes e séries desenvolvida
+                            como projeto do primeiro semestre do curso de Análise e Desenvolvimento de Sistemas.
+                        </p>
+                        <p>
+                            O site permite navegar por um catálogo de filmes, visualizar um slider com
+                            os títulos em destaque e acessar informações detalhadas de cada filme.
+                        </p>
+                        <p>
+                            Todo o conteúdo é gerado dinamicamente via JavaScript a partir de uma
+                            estrutura de dados JSON.
+                        </p>
                     </div>
-                </div>
 
-                <div class="avaliacao-card">
-                    <p class="texto">
-                        “Didática excelente e conteúdo direto ao ponto. Recomendo muito a LucasFlix.”
-                    </p>
-                    <div class="aluno">
-                        <img src="img/user2.jpg" alt="Aluno">
-                        <span>Ana Souza</span>
+                    <div class="sobre-card">
+                        <h3>Autoria</h3>
+                        <div class="autoria-info">
+                            <img src="img/lucas.jpeg" alt="Foto do aluno" class="foto-aluno"
+                                onerror="this.style.display='none'">
+                            <div class="autoria-texto">
+                                <p><strong>Aluno:</strong> Lucas Stefanon</p>
+                                <p><strong>Curso:</strong> Análise e Desenvolvimento de Sistemas</p>
+                                <p><strong>Turma:</strong> Noite</p>
+                            </div>
+                        </div>
+                        <div class="redes-sociais">
+                            <span>Redes Sociais:</span>
+                            <a href="https://github.com/lucasstefanon" class="link-rede-badge"
+                                target="_blank">GitHub</a>
+                            <a href="https://linkedin.com/in/lucas-stefanon/" class="link-rede-badge linkedin"
+                                target="_blank">LinkedIn</a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="avaliacao-card">
-                    <p class="texto">
-                        “Consegui meu primeiro freelance depois de fazer o curso de HTML e CSS!”
-                    </p>
-                    <div class="aluno">
-                        <img src="img/user3.jpg" alt="Aluno">
-                        <span>Pedro Lima</span>
-                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="faq">
-            <h2>Perguntas Frequentes</h2>
-
-            <details class="faq-item">
-                <summary>Preciso saber programar?</summary>
-                <p>Não. Os cursos começam do absoluto zero.</p>
-            </details>
-
-            <details class="faq-item">
-                <summary>Os cursos têm certificado?</summary>
-                <p>Sim! Todos os cursos possuem certificado de conclusão.</p>
-            </details>
-
-            <details class="faq-item">
-                <summary>Posso acessar pelo celular?</summary>
-                <p>Sim. A plataforma é totalmente responsiva.</p>
-            </details>
-        </section>
-
-        <section id="cursos" class="titulo-cursos">
-            <h2>Nossos Cursos</h2>
-            <p>Escolha por onde começar sua jornada na programação</p>
-            <div class="container">
-                <div class="cursos-grid">
-                    <a href="#cursos" class="curso-item">
-                        <div class="warning">Promoção</div>
-                        <div class="photo">
-                            <img src="img/html.png" alt="fotohtml" class="htmlimg">
-                        </div>
-                        <div class="info">
-                            <div class="product-category">LUCASFLIX</div>
-                            <div class="product-name">HTML5</div>
-                        </div>
-                    </a>
-                    <a href="#cursos" class="curso-item">
-                        <div class="photo">
-                            <img src="img/html.png" alt="fotohtml" class="htmlimg">
-                        </div>
-                        <div class="info">
-                            <div class="product-category">LUCASFLIX</div>
-                            <div class="product-name">HTML5</div>
-                        </div>
-                    </a>
-                    <a href="#cursos" class="curso-item">
-                        <div class="photo">
-                            <img src="img/html.png" alt="fotohtml" class="htmlimg">
-                        </div>
-                        <div class="info">
-                            <div class="product-category">LUCASFLIX</div>
-                            <div class="product-name">HTML5</div>
-                        </div>
-                    </a>
-                    <a href="" class="curso-item">
-                        <div class="warning">Promoção</div>
-                        <div class="photo">
-                            <img src="img/css.png" alt="fotohtml" class="cssimg">
-                        </div>
-                        <div class="info">
-                            <div class="product-category">LUCASFLIX</div>
-                            <div class="product-name">HTML5</div>
-                        </div>
-                    </a>
-                    <a href="#cursos" class="curso-item">
-                        <div class="photo">
-                            <img src="img/css.png" alt="fotohtml" class="cssimg">
-                        </div>
-                        <div class="info">
-                            <div class="product-category">LUCASFLIX</div>
-                            <div class="product-name">HTML5</div>
-                        </div>
-                    </a>
-                    <a href="#cursos" class="curso-item">
-                        <div class="photo">
-                            <img src="img/css.png" alt="fotohtml" class="cssimg">
-                        </div>
-                        <div class="info">
-                            <div class="product-category">LUCASFLIX</div>
-                            <div class="product-name">HTML5</div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
     </main>
 
 
     <footer>
-        <div class="container footer-content">
+        <div class="footer-content">
 
             <div class="footer-col">
-                <img src="img/logo.png" alt="logo" class="footer-logo">
+                <img src="img/logo.png" alt="LucasFlix" class="footer-logo">
                 <p class="footer-desc">
-                    Aprenda programação do zero ao avançado com cursos práticos.
+                    Plataforma de filmes e séries. Projeto acadêmico desenvolvido no 1º semestre.
                 </p>
             </div>
 
             <div class="footer-col">
                 <h3>Links</h3>
-                <a href="#initial">Inicio</a>
-                <a href="#cursos">Cursos</a>
-                <a href="#avaliacoes">Feedback</a>
+                <a href="#destaques">Início</a>
+                <a href="#filmes">Filmes</a>
+                <a href="#sobre">Sobre</a>
             </div>
 
             <div class="footer-col">
                 <h3>Redes</h3>
                 <div class="footer-social">
-                    <a href="#"><img src="img/instagram.png"></a>
-                    <a href="#"><img src="img/facebook.png"></a>
-                    <a href="#"><img src="img/twitter.png"></a>
+                    <a href="https://github.com/lucasstefanon" target="_blank" class="link-rede-badge">GitHub</a>
+                    <a href="https://linkedin.com/in/lucas-stefanon/" target="_blank"
+                        class="link-rede-badge linkedin">LinkedIn</a>
                 </div>
             </div>
 
         </div>
 
         <div class="footer-bottom">
-            Criado por <a href="index.html">LUCASFLIX</a>
+            Criado por <a href="index.html">LucasFlix</a> &mdash; Projeto Acadêmico
         </div>
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/app.js"></script>
+
 </body>
 
 </html>

@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     scroll-behavior: smooth;
-    
+
 }
 
 body {
@@ -157,7 +157,9 @@ button:hover {
 
 /* section initial */
 
-main .container {
+main .meucontainer {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
 }
@@ -269,11 +271,59 @@ main .container {
     .initial .firstsection .titulo1 p {
         font-size: 18px;
     }
-    
+
 }
 
 
 /* section por que */
+
+.trilha {
+    background: #0b0b0b;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.trilha h2 {
+    color: red;
+}
+
+.trilha-box {
+    background: #111;
+    padding: 30px 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    position: relative;
+    border: 1px solid #222;
+}
+
+.trilha-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px rgba(255,0,0,0.4);
+}
+
+.step {
+    width: 50px;
+    height: 50px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin: 0 auto 15px auto;
+    font-size: 18px;
+}
+
+.trilha-box h4 {
+    margin-bottom: 10px;
+}
+
+.trilha-box p {
+    color: #ccc;
+    font-size: 14px;
+}
 
 
 .porque {
@@ -296,6 +346,7 @@ main .container {
     max-width: 1100px;
     margin: auto;
 }
+
 @media (max-width: 768px) {
     .porque-grid {
         grid-template-columns: 1fr;
@@ -475,13 +526,14 @@ main .container {
 }
 
 .cursos-grid {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    column-gap: 60px;
-    row-gap: 60px;
-    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (max-width: 768px) {
@@ -493,12 +545,15 @@ main .container {
 }
 
 .curso-item {
+    max-width: 250px;
+    margin: auto;
     position: relative;
     display: block;
     border-radius: 8px;
     text-decoration: none;
+    transition: all 0.3s ease;
     transition: transform 0.3s ease;
-    box-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 .curso-item:hover {
@@ -506,19 +561,23 @@ main .container {
     transform: scale(1.05);
     padding-bottom: 3px;
     box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+    transform: scale(1.08);
+    z-index: 2;
 }
 
 .curso-item .photo {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(34, 34, 34);
-    padding: 10px 50px;
-    height: 100px;
-    width: 100px;
+    padding: 20px;
     border-radius: 7px;
+    min-height: 120px;
 }
 
 .curso-item .photo img {
-    max-width: 100%;
+    width: 110px;
+    height: auto;
 }
 
 .curso-item .warning {
@@ -534,9 +593,10 @@ main .container {
 
 .curso-item .info {
     background-color: rgb(17, 17, 17);
-    margin-top: -30px;
-    padding: 60px 30px 30px 30px;
+    margin-top: -20px;
+    padding: 30px 20px;
     border-radius: 7px;
+    text-align: center;
 }
 
 .curso-item .product-category {
